@@ -96,3 +96,6 @@ except:
 
 def sayhi():
     print("hello bezbaz")
+
+def sayhello():
+    print("hello kirill")
