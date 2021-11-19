@@ -94,8 +94,10 @@ try:
 except:
     print("Exiting")
 
+
 def sayhi():
     print("hello bezbaz")
+
 
 def sayhello():
     print("hello kirill")
