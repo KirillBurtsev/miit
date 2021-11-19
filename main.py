@@ -7,7 +7,8 @@ import sqlite3
 class WelcomeScreen(QDialog):
     def __init__(self):
         super(WelcomeScreen, self).__init__()
-        loadUi(r"C:\Users\Kirill\PycharmProjects\pythonProject\welcomescreen.ui", self)
+        #loadUi(r"C:\Users\Kirill\PycharmProjects\pythonProject\welcomescreen.ui", self)
+        loadUi(r"C:\Users\auto_\Python project\miit\welcomescreen.ui", self)
         self.login.clicked.connect(self.gotologin)
         self.create.clicked.connect(self.gotocreate)
 
@@ -24,7 +25,7 @@ class WelcomeScreen(QDialog):
 class LoginScreen(QDialog):
     def __init__(self):
         super(LoginScreen, self).__init__()
-        loadUi(r"C:\Users\Kirill\PycharmProjects\pythonProject\login.ui", self)
+        loadUi(r"C:\Users\auto_\Python project\miit\login.ui", self)
         self.passwordfield.setEchoMode(QtWidgets.QLineEdit.Password)
         self.login.clicked.connect(self.loginfunction)
 
@@ -52,7 +53,7 @@ class LoginScreen(QDialog):
 class CreateAccScreen(QDialog):
     def __init__(self):
         super(CreateAccScreen, self).__init__()
-        loadUi(r"C:\Users\Kirill\PycharmProjects\pythonProject\createacc.ui", self)
+        loadUi(r"C:\Users\auto_\Python project\miit\createacc.ui", self)
         self.passwordfield.setEchoMode(QtWidgets.QLineEdit.Password) # hidden password
         self.confirmpasswordfield.setEchoMode(QtWidgets.QLineEdit.Password)  # hidden confirmpassword
         self.signup.clicked.connect(self.signupfunction)
@@ -79,7 +80,7 @@ class CreateAccScreen(QDialog):
 class FillProfileScreen(QDialog):
     def __init__(self):
         super(FillProfileScreen, self).__init__()
-        loadUi(r"C:\Users\Kirill\PycharmProjects\pythonProject\fillprofile.ui", self)
+        loadUi(r"C:\Users\auto_\Python project\miit\fillprofile.ui", self)
 
 # main
 app = QApplication(sys.argv)
