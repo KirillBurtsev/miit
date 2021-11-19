@@ -7,7 +7,6 @@ import sqlite3
 class WelcomeScreen(QDialog):
     def __init__(self):
         super(WelcomeScreen, self).__init__()
-        #loadUi(r"C:\Users\Kirill\PycharmProjects\pythonProject\welcomescreen.ui", self)
         loadUi(r"C:\Users\auto_\Python project\miit\welcomescreen.ui", self)
         self.login.clicked.connect(self.gotologin)
         self.create.clicked.connect(self.gotocreate)
