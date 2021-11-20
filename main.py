@@ -81,6 +81,11 @@ class FillProfileScreen(QDialog):
         super(FillProfileScreen, self).__init__()
         loadUi(r"C:\Users\auto_\Python project\miit\fillprofile.ui", self)
 
+class Adminprofile(QDialog):
+    def __init__(self):
+        super(Adminprofile, self).__init__()
+        loadUi(r"C:\Users\auto_\Python project\miit\Adminprofile.ui", self)
+
 # main
 app = QApplication(sys.argv)
 welcome = WelcomeScreen()
