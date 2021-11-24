@@ -78,7 +78,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;
      <string>Continue</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="emailfield">
+   <widget class="QLineEdit" name="username">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -92,7 +92,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;
 font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="passwordfield">
+   <widget class="QLineEdit" name="Firstname">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -154,7 +154,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="confirmpasswordfield">
+   <widget class="QLineEdit" name="Lastname">
     <property name="geometry">
      <rect>
       <x>720</x>
@@ -216,7 +216,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Gender</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox">
+   <widget class="QSpinBox" name="setdate">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -226,7 +226,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      </rect>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="Male">
     <property name="geometry">
      <rect>
       <x>710</x>
@@ -239,7 +239,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Male</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="Female">
     <property name="geometry">
      <rect>
       <x>710</x>
