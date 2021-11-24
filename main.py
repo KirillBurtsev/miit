@@ -1,5 +1,7 @@
 import sys
-import PyQt5
+from PyQt5.uic import loadUi  # ignore this errors
+from PyQt5 import QtWidgets, uic
+from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget
 import sqlite3
 
 class WelcomeScreen(QDialog):
@@ -78,7 +80,7 @@ class FillProfileScreen(QDialog):
     def __init__(self):
         super(FillProfileScreen, self).__init__()
         loadUi(r"C:\Users\auto_\Python project\miit\fillprofile.ui", self)
-        self.setdate =Q
+
 
 class Adminprofile(QDialog):
     def __init__(self):
