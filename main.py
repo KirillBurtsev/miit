@@ -64,22 +64,51 @@ class CreateAccScreen(QDialog):
 
         if len(user) == 0 or len(password) == 0 or len(confirmpassword) == 0:
             self.error.setText("Please input all fields.")
-
         elif password != confirmpassword:
             self.error.setText("Passwords do not match!")
         else:
             with sqlite3.connect("shop_data.db") as conn:
+                print('conec    ted')
                 cur = conn.cursor()
                 user_info = [user, password]
                 cur.execute('INSERT INTO login_info (username, password) VALUES (?,?)', user_info)
-                fillprofile = FillProfileScreen()
-                widget.addWidget(fillprofile)
-                widget.setCurrentIndex(widget.currentIndex()+1)
+                self.gotofillprofile()
+
+    def gotofillprofile(self):
+        fillprofile = FillProfileScreen()
+        widget.addWidget(fillprofile)
+        widget.setCurrentIndex(widget.currentIndex()+1)
 
 class FillProfileScreen(QDialog):
     def __init__(self):
         super(FillProfileScreen, self).__init__()
         loadUi(r"C:\Users\auto_\Python project\miit\fillprofile.ui", self)
+        self.ContinueFill.clicked(self.Fillusername())
+
+    def Fillusername(self):
+        username = self.username.text()
+        Firstname = self.Firstname.text()
+        Lastname = self.Lastname.text()
+
+        self.setdate.setDisplayFormat('yyyy-MM-')
+        if len(username) == 0 or len(Firstname) == 0 or len(LoginScreen) == 0:
+            self.error.setText("Please input all fields.")
+        else:
+            with sqlite3.connect("shop_data.db") as conn:
+                cur = conn.cursor()
+                cur.execute("""CREATE TABLE IF NOT EXISTS profile_info (
+                            username TEXT,
+                            Firstname TEXT,
+                            Lastname TEXT
+                            )""")
+
+               # cur.execute('SELECT password FROM login_info WHERE username =\''+user+"\'")
+                #result_pass = cur.fetchone()[0]
+                #if result_pass == password:
+                 #   print("Succesfully logged in.")
+                #else:
+                  #  print("error!!!!")
+                   # self.error.setText("Invalid username or password")
 
 
 class Adminprofile(QDialog):
@@ -95,6 +124,7 @@ widget = QStackedWidget()
 widget.addWidget(welcome)
 widget.setFixedHeight(800)
 widget.setFixedWidth(1200)
+
 widget.show()
 try:
     sys.exit(app.exec_())

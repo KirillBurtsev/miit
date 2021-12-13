@@ -16,7 +16,7 @@
   <widget class="QWidget" name="bgwidget" native="true">
    <property name="geometry">
     <rect>
-     <x>-10</x>
+     <x>0</x>
      <y>0</y>
      <width>1200</width>
      <height>811</height>
@@ -58,11 +58,11 @@ background-color:qlineargradient(spread:pad, x1:0.093, y1:0.141636, x2:0.995, y2
      <string>Please fill in your profile </string>
     </property>
    </widget>
-   <widget class="QPushButton" name="continue_2">
+   <widget class="QPushButton" name="ContinueFill">
     <property name="geometry">
      <rect>
       <x>450</x>
-      <y>630</y>
+      <y>640</y>
       <width>311</width>
       <height>51</height>
      </rect>
@@ -141,8 +141,8 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="error">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>630</y>
+      <x>470</x>
+      <y>620</y>
       <width>271</width>
       <height>21</height>
      </rect>
@@ -200,7 +200,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Birthday</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="Gender">
     <property name="geometry">
      <rect>
       <x>600</x>
@@ -220,7 +220,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>480</y>
+      <y>490</y>
       <width>291</width>
       <height>61</height>
      </rect>
